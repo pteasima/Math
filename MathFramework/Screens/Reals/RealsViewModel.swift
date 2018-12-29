@@ -1,9 +1,19 @@
-//
-//  RealsViewModel.swift
-//  MathFramework
-//
-//  Created by Petr Šíma on 29/12/2018.
-//  Copyright © 2018 Petr Šíma. All rights reserved.
-//
+import ReactiveSwift
+import enum Result.NoError
 
-import Foundation
+public typealias RealsItem = String
+
+public func realsViewModel(
+  viewDidLoad: Signal<(), NoError>
+  ) -> (
+  initialSections: Signal<[[RealsItem]], NoError>,
+  addItemInSection: Signal<(Int, RealsItem), NoError>
+  ) {
+    let initialSections = viewDidLoad.map {
+      [["foo"]]
+    }
+  return (
+    initialSections: initialSections,
+    addItemInSection: .never
+    )
+}

@@ -18,6 +18,7 @@
 		7965CF3E21D8080F00297B89 /* Reals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7965CF3D21D8080F00297B89 /* Reals.storyboard */; };
 		7965CF4121D80AE900297B89 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF4021D80AE900297B89 /* R.generated.swift */; };
 		7965CF4321D80EF000297B89 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF4221D80EF000297B89 /* Flow.swift */; };
+		7965CF4521D8160C00297B89 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF4421D8160C00297B89 /* LabelCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		7965CF3D21D8080F00297B89 /* Reals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reals.storyboard; sourceTree = "<group>"; };
 		7965CF4021D80AE900297B89 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		7965CF4221D80EF000297B89 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		7965CF4421D8160C00297B89 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		7993CB4121D8061E0047BC5D /* Math.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Math.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D7D71663EEDE77CCEF90528C /* Pods-MathFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathFramework.release.xcconfig"; path = "Target Support Files/Pods-MathFramework/Pods-MathFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 				7965CF3821D807E700297B89 /* RealsViewModel.swift */,
 				7965CF3B21D8080200297B89 /* RealsViewModelTests.swift */,
 				7965CF3D21D8080F00297B89 /* Reals.storyboard */,
+				7965CF4421D8160C00297B89 /* LabelCell.swift */,
 			);
 			path = Reals;
 			sourceTree = "<group>";
@@ -176,8 +179,8 @@
 			buildConfigurationList = 79011FCB21D8042900F690B6 /* Build configuration list for PBXNativeTarget "MathFramework" */;
 			buildPhases = (
 				9689674D4822703169CA415D /* [CP] Check Pods Manifest.lock */,
-				79011FB221D8042900F690B6 /* Headers */,
 				7965CF3F21D80A0F00297B89 /* R.swift */,
+				79011FB221D8042900F690B6 /* Headers */,
 				79011FB321D8042900F690B6 /* Sources */,
 				79011FB421D8042900F690B6 /* Frameworks */,
 				79011FB521D8042900F690B6 /* Resources */,
@@ -319,6 +322,7 @@
 				7965CF4121D80AE900297B89 /* R.generated.swift in Sources */,
 				7965CF4321D80EF000297B89 /* Flow.swift in Sources */,
 				7965CF3C21D8080200297B89 /* RealsViewModelTests.swift in Sources */,
+				7965CF4521D8160C00297B89 /* LabelCell.swift in Sources */,
 				7965CF3421D8073500297B89 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

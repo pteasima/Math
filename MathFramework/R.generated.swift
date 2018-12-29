@@ -16,6 +16,14 @@ public struct R: Rswift.Validatable {
     try intern.validate()
   }
   
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  public struct reuseIdentifier {
+    /// Reuse identifier `LabelCell`.
+    public static let labelCell: Rswift.ReuseIdentifier<LabelCell> = Rswift.ReuseIdentifier(identifier: "LabelCell")
+    
+    fileprivate init() {}
+  }
+  
   /// This `R.storyboard` struct is generated, and contains static references to 1 storyboards.
   public struct storyboard {
     /// Storyboard `Reals`.
@@ -52,7 +60,9 @@ public struct _R: Rswift.Validatable {
       try reals.validate()
     }
     
-    public struct reals: Rswift.StoryboardResourceType, Rswift.Validatable {
+    public struct reals: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      public typealias InitialController = UIKit.UINavigationController
+      
       public let bundle = R.hostingBundle
       public let name = "Reals"
       

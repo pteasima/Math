@@ -24,13 +24,30 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Wrk-mZ-fKZ">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LabelCell" id="Wrk-mZ-fKZ" customClass="LabelCell" customModule="MathFramework" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1w-fq-DNL">
+                                            <rect key="frame" x="8" y="28" width="34" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="Y1w-fq-DNL" firstAttribute="trailing" secondItem="Wrk-mZ-fKZ" secondAttribute="trailingMargin" id="EUD-KL-ny0"/>
+                                    <constraint firstItem="Y1w-fq-DNL" firstAttribute="leading" secondItem="Wrk-mZ-fKZ" secondAttribute="leadingMargin" id="G54-g2-mCx"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Y1w-fq-DNL" secondAttribute="bottom" id="GPR-4B-9X6"/>
+                                    <constraint firstItem="Y1w-fq-DNL" firstAttribute="top" secondItem="Wrk-mZ-fKZ" secondAttribute="topMargin" id="r91-Ae-Oir"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="label" destination="Y1w-fq-DNL" id="Vv7-4M-03b"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
