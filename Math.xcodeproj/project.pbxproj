@@ -11,6 +11,12 @@
 		79011FC121D8042900F690B6 /* MathFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79011FB721D8042900F690B6 /* MathFramework.framework */; };
 		79011FC621D8042900F690B6 /* MathFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79011FC521D8042900F690B6 /* MathFrameworkTests.swift */; };
 		79011FC821D8042900F690B6 /* MathFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 79011FBA21D8042900F690B6 /* MathFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7965CF3421D8073500297B89 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF3321D8073500297B89 /* Environment.swift */; };
+		7965CF3721D807DD00297B89 /* RealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF3621D807DD00297B89 /* RealsViewController.swift */; };
+		7965CF3921D807E700297B89 /* RealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF3821D807E700297B89 /* RealsViewModel.swift */; };
+		7965CF3C21D8080200297B89 /* RealsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF3B21D8080200297B89 /* RealsViewModelTests.swift */; };
+		7965CF3E21D8080F00297B89 /* Reals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7965CF3D21D8080F00297B89 /* Reals.storyboard */; };
+		7965CF4121D80AE900297B89 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF4021D80AE900297B89 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +38,12 @@
 		79011FC021D8042900F690B6 /* MathFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79011FC521D8042900F690B6 /* MathFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFrameworkTests.swift; sourceTree = "<group>"; };
 		79011FC721D8042900F690B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7965CF3321D8073500297B89 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		7965CF3621D807DD00297B89 /* RealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealsViewController.swift; sourceTree = "<group>"; };
+		7965CF3821D807E700297B89 /* RealsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealsViewModel.swift; sourceTree = "<group>"; };
+		7965CF3B21D8080200297B89 /* RealsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealsViewModelTests.swift; sourceTree = "<group>"; };
+		7965CF3D21D8080F00297B89 /* Reals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Reals.storyboard; sourceTree = "<group>"; };
+		7965CF4021D80AE900297B89 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		7993CB4121D8061E0047BC5D /* Math.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Math.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D7D71663EEDE77CCEF90528C /* Pods-MathFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathFramework.release.xcconfig"; path = "Target Support Files/Pods-MathFramework/Pods-MathFramework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +92,9 @@
 		79011FB921D8042900F690B6 /* MathFramework */ = {
 			isa = PBXGroup;
 			children = (
+				7965CF3521D807B200297B89 /* Screens */,
+				7965CF3221D8072600297B89 /* Environment */,
+				7965CF4021D80AE900297B89 /* R.generated.swift */,
 				79011FBA21D8042900F690B6 /* MathFramework.h */,
 				79011FBB21D8042900F690B6 /* Info.plist */,
 			);
@@ -93,6 +108,33 @@
 				79011FC721D8042900F690B6 /* Info.plist */,
 			);
 			path = MathFrameworkTests;
+			sourceTree = "<group>";
+		};
+		7965CF3221D8072600297B89 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				7965CF3321D8073500297B89 /* Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		7965CF3521D807B200297B89 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7965CF3A21D807EA00297B89 /* UncountabilityOfReals */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7965CF3A21D807EA00297B89 /* UncountabilityOfReals */ = {
+			isa = PBXGroup;
+			children = (
+				7965CF3621D807DD00297B89 /* RealsViewController.swift */,
+				7965CF3821D807E700297B89 /* RealsViewModel.swift */,
+				7965CF3B21D8080200297B89 /* RealsViewModelTests.swift */,
+				7965CF3D21D8080F00297B89 /* Reals.storyboard */,
+			);
+			path = UncountabilityOfReals;
 			sourceTree = "<group>";
 		};
 		8E67F4DAD221440A52DBC381 /* Pods */ = {
@@ -132,6 +174,7 @@
 			buildPhases = (
 				9689674D4822703169CA415D /* [CP] Check Pods Manifest.lock */,
 				79011FB221D8042900F690B6 /* Headers */,
+				7965CF3F21D80A0F00297B89 /* R.swift */,
 				79011FB321D8042900F690B6 /* Sources */,
 				79011FB421D8042900F690B6 /* Frameworks */,
 				79011FB521D8042900F690B6 /* Resources */,
@@ -175,6 +218,7 @@
 				TargetAttributes = {
 					79011FB621D8042900F690B6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					79011FBF21D8042900F690B6 = {
 						CreatedOnToolsVersion = 10.1;
@@ -204,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7965CF3E21D8080F00297B89 /* Reals.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +262,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7965CF3F21D80A0F00297B89 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/MathFramework/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate --accessLevel public \"$SRCROOT/MathFramework/R.generated.swift\"\n";
+		};
 		9689674D4822703169CA415D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7965CF3721D807DD00297B89 /* RealsViewController.swift in Sources */,
+				7965CF3921D807E700297B89 /* RealsViewModel.swift in Sources */,
+				7965CF4121D80AE900297B89 /* R.generated.swift in Sources */,
+				7965CF3C21D8080200297B89 /* RealsViewModelTests.swift in Sources */,
+				7965CF3421D8073500297B89 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 52C3D17A04E40C69B8B4DD9F /* Pods-MathFramework.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -413,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cz.pteasima.MathFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -422,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7D71663EEDE77CCEF90528C /* Pods-MathFramework.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -447,6 +520,7 @@
 		79011FCF21D8042900F690B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76EHURWG2W;
 				INFOPLIST_FILE = MathFrameworkTests/Info.plist;
@@ -465,6 +539,7 @@
 		79011FD021D8042900F690B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76EHURWG2W;
 				INFOPLIST_FILE = MathFrameworkTests/Info.plist;
