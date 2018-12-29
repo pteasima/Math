@@ -1,3 +1,7 @@
+import PlaygroundSupport
 import MathFramework
 
-var str = "Hello, playground"
+environment = .playground
+
+environment.flow.play(R.storyboard.reals())
+
