@@ -96,6 +96,7 @@
 		79011FB921D8042900F690B6 /* MathFramework */ = {
 			isa = PBXGroup;
 			children = (
+				7965CF4621D81CB700297B89 /* Prelude */,
 				7965CF3521D807B200297B89 /* Screens */,
 				7965CF3221D8072600297B89 /* Environment */,
 				7965CF4021D80AE900297B89 /* R.generated.swift */,
@@ -141,6 +142,13 @@
 				7965CF4421D8160C00297B89 /* LabelCell.swift */,
 			);
 			path = Reals;
+			sourceTree = "<group>";
+		};
+		7965CF4621D81CB700297B89 /* Prelude */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Prelude;
 			sourceTree = "<group>";
 		};
 		8E67F4DAD221440A52DBC381 /* Pods */ = {

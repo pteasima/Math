@@ -55,7 +55,13 @@
                             <outlet property="delegate" destination="2Rz-Y1-hXh" id="jv0-l1-juE"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="971-eQ-GEQ"/>
+                    <navigationItem key="navigationItem" id="971-eQ-GEQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bk7-IF-Pjd">
+                            <connections>
+                                <action selector="addTapped" destination="2Rz-Y1-hXh" id="KrS-jD-N15"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKC-hX-6rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

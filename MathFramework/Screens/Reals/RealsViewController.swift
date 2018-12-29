@@ -2,18 +2,30 @@ import UIKit
 import ReactiveSwift
 import Result
 import ReactiveCocoa
+import Overture
 
 public final class RealsViewController: UICollectionViewController {
   public override func viewDidLoad() {
     super.viewDidLoad()
-    collectionView.backgroundColor = .green
 
     let start = Signal<(), NoError>.pipe()
     let (
     initialSections,
     addItemInSection
-    ) = realsViewModel(viewDidLoad: start.output)
+    ) = realsViewModel(
+      viewDidLoad: start.output,
+      addTapped: addTappedPipe.output
+      )
 
+    
+
+    self.reactive[\.sections] <~ initialSections
+    addItemInSection
+      .take(during: reactive.lifetime)
+      .observeValues { [unowned self] (section, newItem) in
+        self.sections[section].append(newItem)
+        self.collectionView.insertItems(at: [IndexPath(item: self.sections[section].count - 1, section: section)])
+    }
 
 
     start.input.send(value: ())
@@ -30,8 +42,15 @@ public final class RealsViewController: UICollectionViewController {
     return sections[section].count
   }
   public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.reu, for: <#T##IndexPath#>)
-//    return cell
-    fatalError()
+    return with(collectionView.dequeueReusableCell(withReuseIdentifier: R.reuseIdentifier.labelCell, for: indexPath)!,
+                set(\LabelCell.label.text, sections[indexPath.section][indexPath.item])
+    )
+  }
+
+
+  //UIBarButtonItem ReactiveCocoa integration sucks, so use regular IBAction
+  private let addTappedPipe = Signal<(), NoError>.pipe()
+  @IBAction func addTapped() {
+    addTappedPipe.input.send(value: ())
   }
 }
