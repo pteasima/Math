@@ -1,0 +1,33 @@
+PODS:
+  - Overture (0.3.1)
+  - ReactiveCocoa (8.0.2):
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.0.0)
+  - SnapshotTesting (1.1.0)
+
+DEPENDENCIES:
+  - Overture
+  - ReactiveCocoa
+  - ReactiveSwift
+  - SnapshotTesting
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Overture
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
+    - SnapshotTesting
+
+SPEC CHECKSUMS:
+  Overture: f7b76b2c43a49bd48f7e116313dd99e91d11dd83
+  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  SnapshotTesting: 8ed6a4dceee63f59a60e1bc86f9adbba54eb9287
+
+PODFILE CHECKSUM: 22be8a52411bd4a780f4e30db1d629eb6927758d
+
+COCOAPODS: 1.6.0.beta.2
