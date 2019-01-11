@@ -24,10 +24,17 @@ public struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 1 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   public struct storyboard {
+    /// Storyboard `Counter`.
+    public static let counter = _R.storyboard.counter()
     /// Storyboard `Reals`.
     public static let reals = _R.storyboard.reals()
+    
+    /// `UIStoryboard(name: "Counter", bundle: ...)`
+    public static func counter(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.counter)
+    }
     
     /// `UIStoryboard(name: "Reals", bundle: ...)`
     public static func reals(_: Void = ()) -> UIKit.UIStoryboard {
@@ -57,7 +64,22 @@ public struct _R: Rswift.Validatable {
   
   public struct storyboard: Rswift.Validatable {
     public static func validate() throws {
+      try counter.validate()
       try reals.validate()
+    }
+    
+    public struct counter: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      public typealias InitialController = CounterViewController
+      
+      public let bundle = R.hostingBundle
+      public let name = "Counter"
+      
+      public static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+      }
+      
+      fileprivate init() {}
     }
     
     public struct reals: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {

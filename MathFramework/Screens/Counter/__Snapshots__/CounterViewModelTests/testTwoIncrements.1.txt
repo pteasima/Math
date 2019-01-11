@@ -1,0 +1,8 @@
+VALUE output @ 0: counterText(0)
+VALUE output @ 0: isMinusEnabled(0)
+VALUE input @ 0: viewDidLoad(<null>)
+VALUE output @ 0: counterText(1)
+VALUE output @ 0: isMinusEnabled(1)
+VALUE input @ 0: plus(<null>)
+VALUE output @ 1: counterText(2)
+VALUE input @ 1: plus(<null>)

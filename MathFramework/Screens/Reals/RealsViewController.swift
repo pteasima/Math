@@ -54,3 +54,35 @@ public final class RealsViewController: UICollectionViewController {
     addTappedPipe.input.send(value: ())
   }
 }
+
+private let itemSize = 30
+final class RealsLayout: UICollectionViewLayout {
+
+  override var collectionViewContentSize: CGSize {
+    return CGSize(
+      //all sections should be same width so just take first
+      width: collectionView!.numberOfItems(inSection: 0) * itemSize,
+      height: collectionView!.numberOfSections * itemSize
+    )
+  }
+
+  override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    let frame = CGRect(
+      origin: CGPoint(
+        x: indexPath.item * itemSize,
+        y: indexPath.section * itemSize),
+      size: CGSize(width: itemSize, height: itemSize)
+    )
+    return with(UICollectionViewLayoutAttributes(forCellWith: indexPath),
+                set(\.frame, frame)
+    )
+  }
+  override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    //TODO: optimize
+    return Array(0..<collectionView!.numberOfSections).flatMap { section in
+      Array(0..<collectionView!.numberOfItems(inSection: section)).compactMap {
+        layoutAttributesForItem(at: IndexPath(item: $0, section: section))
+      }
+    }
+  }
+}
