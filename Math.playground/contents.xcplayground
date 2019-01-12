@@ -4,5 +4,7 @@
         <page name='PrisonersDilemma'/>
         <page name='UncountabilityOfReals'/>
         <page name='Counter'/>
+        <page name='JustChoreo'/>
+        <page name='ChoreoDev'/>
     </pages>
 </playground>

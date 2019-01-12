@@ -24,12 +24,19 @@ public struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   public struct storyboard {
+    /// Storyboard `Choreo`.
+    public static let choreo = _R.storyboard.choreo()
     /// Storyboard `Counter`.
     public static let counter = _R.storyboard.counter()
     /// Storyboard `Reals`.
     public static let reals = _R.storyboard.reals()
+    
+    /// `UIStoryboard(name: "Choreo", bundle: ...)`
+    public static func choreo(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.choreo)
+    }
     
     /// `UIStoryboard(name: "Counter", bundle: ...)`
     public static func counter(_: Void = ()) -> UIKit.UIStoryboard {
@@ -64,8 +71,23 @@ public struct _R: Rswift.Validatable {
   
   public struct storyboard: Rswift.Validatable {
     public static func validate() throws {
+      try choreo.validate()
       try counter.validate()
       try reals.validate()
+    }
+    
+    public struct choreo: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      public typealias InitialController = ChoreoViewController
+      
+      public let bundle = R.hostingBundle
+      public let name = "Choreo"
+      
+      public static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+      }
+      
+      fileprivate init() {}
     }
     
     public struct counter: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {

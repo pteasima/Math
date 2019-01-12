@@ -2,9 +2,9 @@ import ReactiveSwift
 import Result
 import Overture
 
-
-struct CoproductOfSignals<Values: NSObject> {
-  var raw = Signal<(String, Values), NoError>.pipe()
+//todo: eventually we can have just one cached value of Values running around (or other optimizations...)
+public struct CoproductOfSignals<Values: NSObject> {
+  public var raw = Signal<(String, Values), NoError>.pipe()
 
   private subscript<Value>(raw kp: ReferenceWritableKeyPath<Values, Value>) -> Signal<Value, NoError> {
     get {
@@ -28,11 +28,11 @@ struct CoproductOfSignals<Values: NSObject> {
         .observe(raw.input)
     }
   }
-  subscript(_ kp: ReferenceWritableKeyPath<Values, NSNull>) -> Signal<(), NoError> {
+  public subscript(_ kp: ReferenceWritableKeyPath<Values, NSNull>) -> Signal<(), NoError> {
     get { return self[raw: kp].map { _ in } }
     set { self[raw: kp] = newValue.map { .init() } }
   }
-  subscript<Value>(_ kp: ReferenceWritableKeyPath<Values, Value>) -> Signal<Value, NoError> {
+  public subscript<Value>(_ kp: ReferenceWritableKeyPath<Values, Value>) -> Signal<Value, NoError> {
     get { return self[raw: kp] }
     set { self[raw: kp] = newValue
     }
@@ -40,6 +40,6 @@ struct CoproductOfSignals<Values: NSObject> {
   
 }
 
-typealias ViewModel<I, O> = (CoproductOfSignals<I>) -> CoproductOfSignals<O> where I: NSObject, O: NSObject
+public typealias ViewModel<I, O> = (CoproductOfSignals<I>) -> CoproductOfSignals<O> where I: NSObject, O: NSObject
 
 

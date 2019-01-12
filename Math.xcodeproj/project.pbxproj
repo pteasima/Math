@@ -12,6 +12,10 @@
 		79011FC121D8042900F690B6 /* MathFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79011FB721D8042900F690B6 /* MathFramework.framework */; };
 		79011FC821D8042900F690B6 /* MathFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 79011FBA21D8042900F690B6 /* MathFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		791D688821E6B8A900288860 /* PrisonersDilemmaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791D688721E6B8A900288860 /* PrisonersDilemmaViewModel.swift */; };
+		793F67AE21E8D80B007EEAD0 /* ChoreoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F67AD21E8D80B007EEAD0 /* ChoreoViewController.swift */; };
+		793F67B021E8D813007EEAD0 /* ChoreoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F67AF21E8D813007EEAD0 /* ChoreoViewModel.swift */; };
+		793F67B221E8D826007EEAD0 /* ChoreoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F67B121E8D826007EEAD0 /* ChoreoViewModelTests.swift */; };
+		793F67B421E8D82E007EEAD0 /* Choreo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793F67B321E8D82E007EEAD0 /* Choreo.storyboard */; };
 		795928C521E7F7A4003E0F8D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795928C421E7F7A4003E0F8D /* ViewModel.swift */; };
 		7965CF3421D8073500297B89 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF3321D8073500297B89 /* Environment.swift */; };
 		7965CF3721D807DD00297B89 /* RealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF3621D807DD00297B89 /* RealsViewController.swift */; };
@@ -21,6 +25,7 @@
 		7965CF4121D80AE900297B89 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF4021D80AE900297B89 /* R.generated.swift */; };
 		7965CF4321D80EF000297B89 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF4221D80EF000297B89 /* Flow.swift */; };
 		7965CF4521D8160C00297B89 /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7965CF4421D8160C00297B89 /* LabelCell.swift */; };
+		79A6377D21EA00620033A99D /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A6377C21EA00620033A99D /* ViewModelTests.swift */; };
 		79A760B021E781DE0033E790 /* SignalSnapshotting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A760AF21E781DE0033E790 /* SignalSnapshotting.swift */; };
 		79A760B321E7C5F30033E790 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A760B221E7C5F30033E790 /* CounterViewModel.swift */; };
 		79A760B521E7C6150033E790 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A760B421E7C6150033E790 /* CounterViewController.swift */; };
@@ -48,7 +53,10 @@
 		79011FC021D8042900F690B6 /* MathFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79011FC721D8042900F690B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		791D688721E6B8A900288860 /* PrisonersDilemmaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrisonersDilemmaViewModel.swift; sourceTree = "<group>"; };
-		793F67AB21E7FFC7007EEAD0 /* Math.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Math.playground; sourceTree = "<group>"; };
+		793F67AD21E8D80B007EEAD0 /* ChoreoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreoViewController.swift; sourceTree = "<group>"; };
+		793F67AF21E8D813007EEAD0 /* ChoreoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreoViewModel.swift; sourceTree = "<group>"; };
+		793F67B121E8D826007EEAD0 /* ChoreoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreoViewModelTests.swift; sourceTree = "<group>"; };
+		793F67B321E8D82E007EEAD0 /* Choreo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Choreo.storyboard; sourceTree = "<group>"; };
 		795928C421E7F7A4003E0F8D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7965CF3321D8073500297B89 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		7965CF3621D807DD00297B89 /* RealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealsViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +66,8 @@
 		7965CF4021D80AE900297B89 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		7965CF4221D80EF000297B89 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		7965CF4421D8160C00297B89 /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		79A6377B21E8E1330033A99D /* Math.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Math.playground; sourceTree = "<group>"; };
+		79A6377C21EA00620033A99D /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		79A760AF21E781DE0033E790 /* SignalSnapshotting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalSnapshotting.swift; sourceTree = "<group>"; };
 		79A760B221E7C5F30033E790 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		79A760B421E7C6150033E790 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +102,7 @@
 		79011FAD21D8042900F690B6 = {
 			isa = PBXGroup;
 			children = (
-				793F67AB21E7FFC7007EEAD0 /* Math.playground */,
+				79A6377B21E8E1330033A99D /* Math.playground */,
 				79011FB921D8042900F690B6 /* MathFramework */,
 				79011FC421D8042900F690B6 /* MathFrameworkTests */,
 				79011FB821D8042900F690B6 /* Products */,
@@ -139,6 +149,17 @@
 			path = PrisonersDilemma;
 			sourceTree = "<group>";
 		};
+		793F67AC21E8D7EF007EEAD0 /* Choreo */ = {
+			isa = PBXGroup;
+			children = (
+				793F67AD21E8D80B007EEAD0 /* ChoreoViewController.swift */,
+				793F67AF21E8D813007EEAD0 /* ChoreoViewModel.swift */,
+				793F67B121E8D826007EEAD0 /* ChoreoViewModelTests.swift */,
+				793F67B321E8D82E007EEAD0 /* Choreo.storyboard */,
+			);
+			path = Choreo;
+			sourceTree = "<group>";
+		};
 		7965CF3221D8072600297B89 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +173,7 @@
 		7965CF3521D807B200297B89 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				793F67AC21E8D7EF007EEAD0 /* Choreo */,
 				79A760B121E7C5E80033E790 /* Counter */,
 				791D688921E6B8AD00288860 /* PrisonersDilemma */,
 				7965CF3A21D807EA00297B89 /* Reals */,
@@ -175,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				795928C421E7F7A4003E0F8D /* ViewModel.swift */,
+				79A6377C21EA00620033A99D /* ViewModelTests.swift */,
 			);
 			path = Prelude;
 			sourceTree = "<group>";
@@ -307,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7965CF3E21D8080F00297B89 /* Reals.storyboard in Resources */,
+				793F67B421E8D82E007EEAD0 /* Choreo.storyboard in Resources */,
 				79A760B721E7C8DD0033E790 /* Counter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,8 +459,10 @@
 				79A760B021E781DE0033E790 /* SignalSnapshotting.swift in Sources */,
 				7965CF4521D8160C00297B89 /* LabelCell.swift in Sources */,
 				7965CF3421D8073500297B89 /* Environment.swift in Sources */,
+				793F67AE21E8D80B007EEAD0 /* ChoreoViewController.swift in Sources */,
 				79A760B521E7C6150033E790 /* CounterViewController.swift in Sources */,
 				795928C521E7F7A4003E0F8D /* ViewModel.swift in Sources */,
+				793F67B021E8D813007EEAD0 /* ChoreoViewModel.swift in Sources */,
 				791D688821E6B8A900288860 /* PrisonersDilemmaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +471,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793F67B221E8D826007EEAD0 /* ChoreoViewModelTests.swift in Sources */,
 				79A760BB21E7CB190033E790 /* CounterViewModelTests.swift in Sources */,
+				79A6377D21EA00620033A99D /* ViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
